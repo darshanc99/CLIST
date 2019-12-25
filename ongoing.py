@@ -4,7 +4,7 @@ from requests_oauthlib import OAuth1
 from datetime import datetime,date,time
 
 #URL - response
-url = "https://clist.by/api/v1/json/contest//?username=darshanc99&api_key=387ae2fdb36a9a632694f4d4bd8a5e9b35f7c4dc"
+url = "https://clist.by/api/v1/json/contest/" + YOUR_API_KEY
 payload = "{}"
 response = requests.request("GET",url,data=payload)
 a = response.text
