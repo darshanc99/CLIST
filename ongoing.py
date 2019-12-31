@@ -19,7 +19,7 @@ count = 0
 
 for j in range(j_count+1):
   k = str(j*1000)
-  url = "https://clist.by/api/v1/json/contest/?limit="+total+"&offset="+k+"&username=darshanc99&api_key=387ae2fdb36a9a632694f4d4bd8a5e9b35f7c4dc"
+  url = "https://clist.by/api/v1/json/contest/?limit="+total+"&offset="+k+"YOUR_API_KEY"
   payload = "{}"
   response = requests.request("GET",url,data=payload)
   print("OFFSET:",k,"\n","RESPONSE:",response,"\n\n")
